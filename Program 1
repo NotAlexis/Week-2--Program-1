@@ -1,0 +1,44 @@
+/*Filename: ip3a_alexisb_maxt_average.cpp
+//Desc: Objective: Program that demos user prompt, input of integers, computing of average
+(as a float) and output all 4 values.
+//Authors: Alexis & Max
+//Driver: Alexis
+//Navigator: Max
+//Date: Jan 15 2019
+
+*/
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main ()
+
+{
+
+//declare
+
+int num1, num2, num3, sum;
+float average;
+
+
+
+
+//initialize
+cout << "Please enter three integers, separated by a space: ";
+cin >> num1 >> num2 >> num3 ;
+
+//average = num1 + num2 + num3 / 3;
+sum = num1 + num2 + num3;
+average = static_cast<float> (sum) / 3;
+
+
+
+//output
+cout << fixed << showpoint << setprecision(2);
+cout << "The average of " << num1 << " " << num2 << " " << num3 << " is " << average <<endl;
+
+
+}
